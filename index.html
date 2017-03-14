@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<ul>
+    <li class="left"><a id="game" href="#" >Minesweeper</a></li>
+</ul>
+
+<content>
+</content>
+
+</body>
+<script>
+
+    $('#game').click(function () {
+        stopTimer();
+        $('content').load('minesweeper.html')
+    })
+
+    $('content').load('minesweeper.html')
+</script>
+</html>

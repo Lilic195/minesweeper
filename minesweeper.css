@@ -1,0 +1,124 @@
+body{
+    font-family: Verdana, Geneva, sans-serif;
+    padding: 0;
+}
+
+.overlay{
+    position: fixed;
+    opacity: .5;
+    height: 100%;
+    width: 100%;
+}
+
+#anim{
+    position: absolute;
+}
+.animation{
+    position: absolute;
+    top: -100px;
+    width: 50px;
+    height: 50px;
+    animation-name: bombs;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes bombs {
+    0%{
+        top: calc(0% - 100px);
+    }
+    100%{
+        top: calc(100% + 50px);
+    }
+}
+#container{
+    border: 1px solid #888888;
+    margin: 70px auto;
+    position: relative;
+    width: 1020px;
+    height: 570px;
+    border-radius: 0.5%;
+    background-color: #f2f2f2;
+}
+
+#controls{
+    margin: auto;
+    top: 10px;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+
+}
+#box{
+    margin: auto;
+    top: 10px;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    border: 1px solid #888888;
+}
+#box  button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #888888;
+    float: left;
+    display: inline-block;
+    font-size: 100%;
+    font-weight: bold;
+    padding : 5px;
+    cursor: pointer;
+    background: buttonface;
+    transition-property: background;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+#box button:hover{
+}
+
+
+#smile{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    top: 10px;
+}
+
+#timer{
+    position: relative;
+    margin-top: 15px;
+    font-size: 100%;
+    font-weight: bold;
+    color: #ff4dff;
+    float: right;
+
+}
+
+button{
+    padding: 0;
+}
+
+#start{
+    width: 120px;
+    height:30px;
+    border: none;
+    margin-top: 10px;
+    font-size: 100%;
+    font-weight: bold;
+    color: #ff4dff;
+    float: left;
+}
+
+#restart{
+    width: 120px;
+    height:30px;
+    border: none;
+    margin-top: 10px;
+    font-size: 100%;
+    font-weight: bold;
+    color: #ff4dff;
+    float: right;
+}
